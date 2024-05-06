@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="submit101" type="submit" onclick="modifystyle()">Submit</button>
+    
+    <p id="paragraph">It is rightly said that being disciplined is essential in life. When a person leads a
+        disciplined life, they set an easy path to success. They will develop an approach to
+        happiness and a beautiful future ahead. Being disciplined is the practice of having a
+        scheduled daily routine which helps an individual to be punctual and hard-working.
+        An individual is taught what being disciplined means from the time they are young.
+        Even though discipline takes a lot of effort, the advantages of a disciplined life
+        make it a worthwhile endeavour.</p>
+
+
+        <form id="form101" action="input">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" ><br><br>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" id=""><br><br>
+            <label for="contactNumber">Contact No</label>
+            <input type="text" id="contactNumber" name="contactNumber" ><br><br>
+            <label for="emailId">Email Id</label>
+            <input type="text" id="emailId" name="emailId" ><br><br>
+            <button id="submit102" type="submit" onclick="submitForm()">Submit</button>
+        </form> <br><br><br><br>
+
+
+        <select name="Courses" id="removeSelect">
+            <option value="1">BE</option>
+            <option value="2">BTech</option>
+            <option value="3">BSc</option>
+            <option value="4">BPharm</option>
+            <option value="5">BA LLB</option>
+        </select>
+        <button onclick="removeOption">Remove Option</button>
+
+        <script>
+
+                function removeOption(){
+                var select = document.getElementById('removeSelect');
+                select.remove(select.selectedIndex);
+            }
+
+            function modifystyle(){
+                var paragraph =document.getElementById('paragraph');
+                paragraph.style.color ='blue';
+                paragraph.style.fontSize = '20px';
+                paragraph.style.fontWeight ='bold';
+            }
+
+
+
+
+            function submitForm(){
+                var firstName =document.getElementById('firstName');
+                var lastName =document.getElementById('lastName');
+                var contactNumber =document.getElementById('contactNumber');
+                var emailId =document.getElementById('emailId');
+
+
+                document.write("Bhavesh" +firstName +"<br>");
+                document.write("Khandar" + lastName+"<br>");
+                document.write("8055244093" + contactNumber+"<br>");
+                document.write("bhavesh@gmail.com" + emailId+"<br>");
+            }
+
+
+          
+        </script>
+        
+</body>
+</html>
