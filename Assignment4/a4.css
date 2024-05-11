@@ -1,0 +1,40 @@
+.btn{
+ 
+    margin-left:6%;
+    margin-top: 2%;
+   
+   }
+   h1{
+    margin-left: 40%;
+    margin-top: 0.5%;
+   }
+   .container{
+    width: 80%;
+    margin: 80px;
+    padding: 25px;
+    border:1px solid red ;
+   
+   }
+   #para{
+    /* //color: blue; */
+    font-size: 20px;
+   }
+   .change{
+    background-color: aqua;
+    color: aliceblue;
+   }
+   .custom-select{
+    width: 20rem;
+    height: 3rem;
+   }
+   
+   .link{
+    font-size: 1rem;
+   }
+   .Second_para{
+    font-size: 20px;
+   
+   }
+   .Second_para strong{
+   color: white;
+   }
